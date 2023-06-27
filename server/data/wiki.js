@@ -1,0 +1,68 @@
+module.exports = {
+  _id: '62534fde2816ed76999e521d',
+  wikiTitle: 'Apple',
+  wikiDescription:
+    " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic",
+  type: 'Ingredient',
+  image: 'https://blending.s3.us-east-1.amazonaws.com/1771281.png',
+  status: null,
+  portions: [
+    {
+      measurement: 'cup, quartered or chopped',
+      meausermentWeight: '125',
+      default: false,
+      __typename: 'Portion',
+    },
+    {
+      measurement: 'cup slices',
+      meausermentWeight: '109',
+      default: false,
+      __typename: 'Portion',
+    },
+    {
+      measurement: 'large (3-1/4" dia)',
+      meausermentWeight: '223',
+      default: false,
+      __typename: 'Portion',
+    },
+    {
+      measurement: 'medium (3" dia)',
+      meausermentWeight: '182',
+      default: true,
+      __typename: 'Portion',
+    },
+    {
+      measurement: 'small (2-3/4" dia)',
+      meausermentWeight: '149',
+      default: false,
+      __typename: 'Portion',
+    },
+    {
+      measurement: 'extra small (2-1/2" dia)',
+      meausermentWeight: '101',
+      default: false,
+      __typename: 'Portion',
+    },
+    {
+      measurement: 'NLEA serving',
+      meausermentWeight: '242',
+      default: false,
+      __typename: 'Portion',
+    },
+  ],
+  publishDate: null,
+  description: null,
+  isPublished: true,
+  hasInCompare: false,
+  commentsCount: 2,
+  author: {
+    _id: '6375f587a43a65d339ba0838',
+    displayName: 'Kazi',
+    email: 'foysalkazi11@gmail.com',
+    firstName: 'Foysal',
+    lastName: 'Kazi',
+    profilePicture: '',
+    __typename: 'Admin',
+  },
+  __typename: 'wikiList',
+};
