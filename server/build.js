@@ -14,14 +14,13 @@ createDir(DIRECTORY)
 // 3. Copying all the required files into build folder
 copyFile('./config.json', DIRECTORY);
 copyFile('./index.ejs', DIRECTORY);
-// copyFile('./styles/main.scss', DIRECTORY);
 
-copyDir('./public', DIRECTORY);
+copyDir('./assets', DIRECTORY);
 
 
 compileSass(DIRECTORY)
 
-
+console.log("Build successfully")
 
 
 

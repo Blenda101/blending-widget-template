@@ -3,12 +3,16 @@ const fs = require('fs');
 
 const compileSass = (DIRECTORY) => {
   sass.render({
-    file: 'styles/main.scss',
+    file: 'styles/style.scss',
     outputStyle: 'compressed',
   }, (error, result) => {
-    console.log(error)
+    if(error){
+      console.log(error)
+    }
     fs.writeFile(`${DIRECTORY}/main.css`, result.css, function(err){
-      console.log(err)  
+      if(err){
+        console.log(err)  
+      }
     });
   });
 }

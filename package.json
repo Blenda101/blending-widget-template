@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "npm run server",
     "sass": "sass --watch ./styles/main.scss ./server/public/style.css",
-    "server": "nodemon -e js,ejs,json,scss ./server/index.js",
-    "build": "node ./server/script.js"
+    "server": "nodemon -e js,ejs,json,scss ./server/dev.js",
+    "build": "node ./server/build.js"
   },
   "keywords": [],
   "author": "",
