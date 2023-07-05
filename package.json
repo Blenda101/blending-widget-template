@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon -e js,ejs,json ./server/index.js"
+    "dev": "npm run server",
+    "sass": "sass --watch ./styles/main.scss ./server/public/style.css",
+    "server": "nodemon -e js,ejs,json,scss ./server/index.js",
+    "build": "node ./server/script.js"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +20,9 @@
     "livereload": "^0.9.3"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "node-sass": "^9.0.0",
+    "node-sass-middleware": "^1.0.1",
+    "nodemon": "^2.0.22",
+    "sass": "^1.63.6"
   }
 }

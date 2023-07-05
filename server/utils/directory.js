@@ -17,7 +17,7 @@ var copyDir = (src, dest, callback) => {
   const copy = (copySrc, copyDest) => {
     fs.readdir(copySrc, (err, list) => {
       if (err) {
-        callback(err);
+        if(callback) callback(err);
         return;
       }
       list.forEach((item) => {

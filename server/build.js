@@ -1,4 +1,5 @@
 const {createDir, copyFile, copyDir, removeDir} = require('./utils/directory');
+const {compileSass} = require('./utils/compiler');
 
 const DIRECTORY = './build'
 
@@ -13,11 +14,12 @@ createDir(DIRECTORY)
 // 3. Copying all the required files into build folder
 copyFile('./config.json', DIRECTORY);
 copyFile('./index.ejs', DIRECTORY);
-copyFile('./styles/main.css', DIRECTORY);
+// copyFile('./styles/main.scss', DIRECTORY);
 
-copyDir('./assets', DIRECTORY);
+copyDir('./public', DIRECTORY);
 
 
+compileSass(DIRECTORY)
 
 
 
