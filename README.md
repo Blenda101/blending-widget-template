@@ -1,6 +1,6 @@
-# Widget Theme
+# Theme for Widget
 
-Hi! I'm your first Markdown file in **StackEdit**. If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have finished with me, you can create new files by opening the **file explorer** on the left corner of the navigation bar.
+Theme is a component by which Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur consequuntur unde soluta reprehenderit inventore pariatur earum consequatur autem amet quisquam! Voluptate asperiores enim distinctio velit. Sed omnis, deleniti commodi vitae consequuntur nam iusto possimus necessitatibus, quo officiis minima id tenetur odit. Sint quaerat molestias sed enim velit, consequuntur exercitationem voluptatibus.
 
 ## Technology Stack
 
