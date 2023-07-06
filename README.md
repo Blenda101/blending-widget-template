@@ -69,7 +69,8 @@ To connect any event listener from the frontend
     </body>
 ## Theme Styling
 
-In the root directory, there is a folder named **"styles"** under which **style.scss** is available. In this file, all the CSS or Sass code for styling needs to be placed
+In the root directory, there is a folder named **"styles"** under which **style.scss** is available. In that file, all the CSS or Sass code for styling needs to be placed
+
 **index.ejs**
 
     <body>
