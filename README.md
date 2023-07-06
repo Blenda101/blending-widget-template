@@ -5,6 +5,7 @@ Hi! I'm your first Markdown file in **StackEdit**. If you want to learn about St
 ## Technology Stack
 
 [**EJS**](https://ejs.co/#docs)
+
 EJS is a simple templating language that lets you generate HTML markup with plain JavaScript. It is a simple template language or engine. EJS has its own defined syntax and tags. It offers an easier way to generate HTML dynamically.
 
 We actually define HTML in the EJS syntax and specify how and where various data will go on the page. Then the template engine combines these data and runs programming logic to generate the final HTML page. So, the task of EJS is to take your data and insert it into the web page according to how you’ve defined the template and generate the final HTML.
@@ -12,9 +13,11 @@ We actually define HTML in the EJS syntax and specify how and where various data
 We used this syntax to put placeholder variables and the value of these variables will be filled up by data from the widgets.
 
 **[CSS](https://www.w3schools.com/css/)** 
+
 CSS is the language we use to style the EJS document. CSS describes how those EJS elements should be displayed.
 
 **[SASS](https://sass-lang.com/documentation/)**
+
 CSS with superpowers. Sass is a stylesheet language that’s compiled to CSS. It allows you to use variables, nested rules, mixins, functions, and more, all with a fully CSS-compatible syntax. Sass helps keep large stylesheets well-organized and makes it easy to share design within and across projects.
 
 ## Prerequisites
