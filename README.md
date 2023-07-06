@@ -5,7 +5,6 @@ Hi! I'm your first Markdown file in **StackEdit**. If you want to learn about St
 ## Technology Stack
 
 [**EJS**](https://ejs.co/#docs)
-
 EJS is a simple templating language that lets you generate HTML markup with plain JavaScript. It is a simple template language or engine. EJS has its own defined syntax and tags. It offers an easier way to generate HTML dynamically.
 
 We actually define HTML in the EJS syntax and specify how and where various data will go on the page. Then the template engine combines these data and runs programming logic to generate the final HTML page. So, the task of EJS is to take your data and insert it into the web page according to how you’ve defined the template and generate the final HTML.
@@ -13,11 +12,9 @@ We actually define HTML in the EJS syntax and specify how and where various data
 We used this syntax to put placeholder variables and the value of these variables will be filled up by data from the widgets.
 
 **[CSS](https://www.w3schools.com/css/)** 
-
 CSS is the language we use to style the EJS document. CSS describes how those EJS elements should be displayed.
 
 **[SASS](https://sass-lang.com/documentation/)**
-
 CSS with superpowers. Sass is a stylesheet language that’s compiled to CSS. It allows you to use variables, nested rules, mixins, functions, and more, all with a fully CSS-compatible syntax. Sass helps keep large stylesheets well-organized and makes it easy to share design within and across projects.
 
 ## Prerequisites
@@ -35,12 +32,41 @@ Or,
 
 ## Development
 
-All your files and folders are presented as a tree in the file explorer. You can switch from one to another by clicking a file in the tree.
+To open the development server
 
-## Rename a file
+    npm run dev
+    
+Or, 
 
-You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.
+    yarn dev
 
+## Theme Markup
+
+All the template markup code should be written in the **index.ejs** file located inside the root of the project directory. The markup must be wrapped with a body tag.
+
+    <body>
+	    <!-- Start writing your code from here -->
+    </body>
+
+To show dynamic data in the theme component
+
+    <body>
+	    <div>
+		    <h3><%=  data.wikiTitle  %></h3>
+		    <ul>
+			    <% for(var i = 0; i < data.author.length; i++) {
+			        <li><%= data.author[i] %></li>
+			    <% } %>
+			</ul>
+		</div>
+    </body>
+
+To connect any event listener from the frontend
+
+    <body>
+	    <p><%=  data.description %></p>
+	    <button onclick="commentDrop(<%= post.id %>)">Follow</button>
+    </body>
 ## Delete a file
 
 You can delete the current file by clicking the **Remove** button in the file explorer. The file will be moved into the **Trash** folder and automatically deleted after 7 days of inactivity.
@@ -163,3 +189,5 @@ A --> C(Round Rect)
 B --> D{Rhombus}
 C --> D
 ```
+
+
