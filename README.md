@@ -117,7 +117,12 @@ All the images should be stored in the **"assets"** folder and use relative path
 
 # Configuration File
 In the **config.json** file we need to write all the configuration settings in this file. 
-
+|   property  	|                    description                   	| value                                                                        	|   type   	|
+|:-----------:	|:------------------------------------------------:	|------------------------------------------------------------------------------	|:--------:	|
+|    title    	| name of the theme                                	|                                       -                                      	|  string  	|
+| description 	| description of the theme                         	|                                       -                                      	|  string  	|
+|   channel   	| category of the theme                            	|   "Recipe",   "Ingredient",   "Wiki",   "GeneraBlog",   "Plan",   "Nutrient" 	|  string  	|
+|   preview   	| available variant of responsiveness in the theme 	|   "Web",   "Mobile"                                                          	| string[] 	|
 **Example:**
 
     {
@@ -126,9 +131,7 @@ In the **config.json** file we need to write all the configuration settings in t
       "channel": "Wiki",
       "preview": ["Web", "Mobile"]
     }
-| Options |  Description  | Value
-|  title   --|
-| description |  |
+
 
 
 ## Directory Architecture
