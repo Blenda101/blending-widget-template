@@ -1,4 +1,5 @@
 
+
 # Theme for Widget
 
 Theme is a component by which Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur consequuntur unde soluta reprehenderit inventore pariatur earum consequatur autem amet quisquam! Voluptate asperiores enim distinctio velit. Sed omnis, deleniti commodi vitae consequuntur nam iusto possimus necessitatibus, quo officiis minima id tenetur odit. Sint quaerat molestias sed enim velit, consequuntur exercitationem voluptatibus.
@@ -115,7 +116,8 @@ All the images should be stored in the **"assets"** folder and use relative path
     </body>
 
 
-# Configuration File
+## Configuration File
+
 In the **config.json** file we need to write all the configuration settings in this file. 
 |   property  	|                    description                   	| value                                                                        	|   type   	|
 |:-----------:	|:------------------------------------------------:	|------------------------------------------------------------------------------	|:--------:	|
@@ -136,13 +138,33 @@ In the **config.json** file we need to write all the configuration settings in t
 
 
 
-## Directory Architecture
+## Thumbnail
+To set a thumbnail for the theme preview, A file named **"thumbnail.png"** must be stored in the **"asset"** folder. The ratio of the image should be 4:3 to experience a proper view
 
 
-
-## Build Project
 
 
 
 # Publishing the Theme
 
+To publish the project at first we need to build the project
+
+## Build Project
+
+
+To build the theme project
+
+    npm run build
+    
+Or, 
+
+    yarn build
+
+After building the project a **"dist"** folder will be generated. All the necessary files will be stored there. 
+
+## Publish
+
+ 1. Create a zip of the dist folder.
+ 2. Go to [Blending101](https://main.d1rxhl6rl8nnjm.amplifyapp.com/settings/themes) admin theme page.
+ 3. Click on the **"Add Theme"** in the top right corner.
+ 4. A new card type of interface will appear. Click on that think to upload that compressed zip file.
