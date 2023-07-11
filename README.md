@@ -1,3 +1,4 @@
+
 # Theme for Widget
 
 Theme is a component by which Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur consequuntur unde soluta reprehenderit inventore pariatur earum consequatur autem amet quisquam! Voluptate asperiores enim distinctio velit. Sed omnis, deleniti commodi vitae consequuntur nam iusto possimus necessitatibus, quo officiis minima id tenetur odit. Sint quaerat molestias sed enim velit, consequuntur exercitationem voluptatibus.
@@ -92,18 +93,42 @@ In the root directory, there is a folder named **"styles"** under which **style.
 
 ## Adding Image
 
-You can export the current file by clicking **Export to disk** in the menu. You can choose to export the file as plain Markdown, as HTML using a Handlebars template or as a PDF.
+All the images should be stored in the **"assets"** folder and use relative paths when referencing them.
+
+**Example-1**: If you want to show an image named **"background.png"** that is stored in a subdirectory called image
 
     <body>
    	    <p><%=  data.description %></p>
    	    <img
-          src="image/thumbnail.png"
+          src="image/background.png"
+          alt=""
+        />
+    </body>
+**Example-2**: If you want to show an image named **"profile.jpg"** which is directly stored inside **assets** folder
+
+     <body>
+   	    <p><%=  data.description %></p>
+   	    <img
+          src="profile.jpg"
           alt=""
         />
     </body>
 
-# Configuration File
 
+# Configuration File
+In the **config.json** file we need to write all the configuration settings in this file. 
+
+**Example:**
+
+    {
+      "title": "RECIPE NAME",
+      "description": "RECIPE_DESCRIPTION",
+      "channel": "Wiki",
+      "preview": ["Web", "Mobile"]
+    }
+| Options |  Description  | Value
+|  title   --|
+| description |  |
 
 
 ## Directory Architecture
@@ -115,3 +140,4 @@ You can export the current file by clicking **Export to disk** in the menu. You 
 
 
 # Publishing the Theme
+
