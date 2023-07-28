@@ -17,7 +17,7 @@ We used this syntax to put placeholder variables and the value of these variable
 CSS is the language we use to style the EJS document. CSS describes how those EJS elements should be displayed.
 
 **[SASS](https://sass-lang.com/documentation/)**
-CSS with superpowers. Sass is a stylesheet language that’s compiled to CSS. It allows you to use variables, nested rules, mixins, functions, and more, all with a fully CSS-compatible syntax. Sass helps keep large stylesheets well-organized and makes it easy to share design within and across projects.
+CSS with superpowers. Sass is a stylesheet language that’s compiled into CSS. It allows you to use variables, nested rules, mixins, functions, and more, all with a fully CSS-compatible syntax. Sass helps keep large stylesheets well-organized and makes it easy to share designs within and across projects.
 
 ## Prerequisites
 - **Nodejs**: version 16 or higher
@@ -139,15 +139,13 @@ In the **config.json** file we need to write all the configuration settings in t
 
 
 ## Thumbnail
-To set a thumbnail for the theme preview, A file named **"thumbnail.png"** must be stored in the **"asset"** folder. The ratio of the image should be 4:3 to experience a proper view
-
-
+To set a thumbnail for the theme preview, A file named **"thumbnail.png"** must be stored in the **"asset"** folder. The ratio of the image should be 2:1 to experience a proper view. The resolution should be 470px * 235px
 
 
 
 # Publishing the Theme
 
-To publish the project at first we need to build the project
+To publish the project first we need to build the project
 
 ## Build Project
 
