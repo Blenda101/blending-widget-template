@@ -123,7 +123,7 @@ In the **config.json** file we need to write all the configuration settings in t
 |:-----------:	|:------------------------------------------------:	|------------------------------------------------------------------------------	|:--------:	|
 |    title    	| name of the theme                                	|                                       -                                      	|  string  	|
 | description 	| description of the theme                         	|                                       -                                      	|  string  	|
-|   channel   	| category of the theme                            	|   "Recipe",   "Ingredient",   "Wiki",   "GeneraBlog",   "Plan",   "Nutrient" 	|  string  	|
+|   domain   	| category of the theme                            	|   "Recipe",   "Ingredient",   "Wiki",   "GeneraBlog",   "Plan",   "Nutrient" 	|  string  	|
 |   preview   	| available variant of responsiveness in the theme 	|   "Web",   "Mobile"                                                          	| string[] 	|
 
 
