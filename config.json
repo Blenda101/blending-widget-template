@@ -1,6 +1,6 @@
 {
   "title": "RECIPE NAME",
   "description": "RECIPE_DESCRIPTION",
-  "channel": "Wiki",
+  "domain": "Wiki",
   "preview": ["Web", "Mobile"]
 }
