@@ -21,7 +21,6 @@
   },
   "devDependencies": {
     "node-sass": "^9.0.0",
-    "node-sass-middleware": "^1.0.1",
     "nodemon": "^2.0.22",
     "sass": "^1.63.6"
   }
