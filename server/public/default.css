@@ -1,3 +1,4 @@
+/* -------------------- INSTALLING SEGOE UI -------------------- */
 @font-face {
   font-family: 'Segoe UI';
   font-style: normal;
@@ -25,6 +26,33 @@
   font-weight: bold;
   src: local('Segoe UI Bold Italic'),
     url('./fonts/Segoe UI Bold Italic.woff') format('woff');
+}
+
+/* -------------------- INSTALLING FONT AWESOME -------------------- */
+@font-face {
+  font-family: 'Font-Awesome';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url('./fonts/fa-regular-400.woff2') format('woff2'),
+    url('./fonts/fa-regular-400.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Font-Awesome';
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url('./fonts/fa-solid-900.woff2') format('woff2'),
+    url('./fonts/fa-solid-900.ttf') format('truetype');
+}
+
+.far,
+.fa-regular {
+  font-weight: 400;
+}
+.fas,
+.fa-solid {
+  font-weight: 900;
 }
 
 *,

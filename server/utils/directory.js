@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Function for copying files
-var copyFile = (file, dir2)=>{
+var copyFile = (file, dir2) => {
   //gets file name and adds it to dir2
   var f = path.basename(file);
   var source = fs.createReadStream(file);
@@ -11,13 +11,12 @@ var copyFile = (file, dir2)=>{
   source.pipe(dest);
 };
 
-
 // Function for copying all the files under one directory
 var copyDir = (src, dest, callback) => {
   const copy = (copySrc, copyDest) => {
     fs.readdir(copySrc, (err, list) => {
       if (err) {
-        if(callback) callback(err);
+        if (callback) callback(err);
         return;
       }
       list.forEach((item) => {
@@ -50,13 +49,13 @@ var copyDir = (src, dest, callback) => {
 };
 
 const createDir = (directory) => {
-  if (!fs.existsSync(directory)){
+  if (!fs.existsSync(directory)) {
     fs.mkdirSync(directory);
   }
-}
+};
 
 const removeDir = (directory) => {
   fs.rmSync(directory, { recursive: true, force: true });
-}
+};
 
-module.exports = {createDir, copyFile, copyDir, removeDir}
+module.exports = { createDir, copyFile, copyDir, removeDir };
