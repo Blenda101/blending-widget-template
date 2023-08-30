@@ -25,6 +25,19 @@ body {
     }
   }
 
+  &__menu {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s;
+    &:hover {
+      background-color: #eee;
+    }
+  }
+
   &__image {
     overflow: hidden;
     margin: 10px 0;
