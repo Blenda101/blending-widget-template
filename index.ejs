@@ -1,5 +1,27 @@
 <body>
-  <!-- Start writing your code from here -->
-  <!-- To add fontawesome icon -->
-  <i class="bookmark-icon"></i>
+  <div class="blog">
+    <p class="blog__overlay"><%= data.title || 'Demo Blog' %></p>
+
+    <img
+      src="<%= data.coverImage || 'images/milk.png' %>"
+      alt="<%= data.title %> image"
+      class="blog__image"
+    />
+    <div class="blog__info">
+      <h5><%= data.createdBy ? data.createdBy.displayName : '' %></h5>
+      <span><%= data.published %></span>
+    </div>
+    <div class="blog__meta">
+      <div class="blog__brand">
+        <img src="images/logo_small.svg" alt="" />
+        <h3>Blending 101</h3>
+      </div>
+      <div class="blog__action">
+        <button id="onBookmark"><i class="bookmark-icon"></i></button>
+        <button id="onComment">
+          <i class="comment-icon"></i> <%= data.commentsCount || 0 %>
+        </button>
+      </div>
+    </div>
+  </div>
 </body>

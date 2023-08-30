@@ -1,6 +1,6 @@
 {
-  "title": "RECIPE NAME",
-  "description": "RECIPE_DESCRIPTION",
-  "domain": "Nutrient",
+  "title": "Home - Blog",
+  "description": "Blog theme for homepage of Blending101",
+  "domain": "GeneralBlog",
   "preview": ["Web", "Mobile"]
 }

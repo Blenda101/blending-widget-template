@@ -1,3 +1,68 @@
 @import 'icons';
 
-// WRITE YOUR SCSS / CSS CODE HERE
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog {
+  width: 400px;
+  position: relative;
+  box-shadow: 0 3px 6px rgba(91, 91, 91, 0.161);
+  border: 1px solid #e9e9e9;
+  background-color: #fff;
+
+  &__overlay {
+    background-color: rgba(128, 128, 128, 0.74);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    margin: 0;
+    color: #fff;
+    padding: 5px;
+    font-size: 16px;
+  }
+  &__image {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+    padding: 0 5px;
+  }
+  &__meta {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+  }
+  &__brand {
+    display: flex;
+    align-items: center;
+    img {
+      height: 20px;
+    }
+    h3 {
+      margin-left: 5px;
+      font-weight: 500;
+      font-size: 16px;
+    }
+  }
+  &__action {
+    button {
+      &:nth-of-type(1) {
+        margin-right: 10px;
+      }
+    }
+    i {
+      display: inline-block;
+      color: #929292;
+    }
+  }
+}
