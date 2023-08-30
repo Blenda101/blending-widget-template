@@ -23,6 +23,13 @@
   }
 }
 
+.menu-icon {
+  @extend %f-icon;
+  &:before {
+    content: '\f142';
+  }
+}
+
 .bookmark-icon {
   @extend %f-icon;
   &:before {
