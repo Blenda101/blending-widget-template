@@ -2,9 +2,9 @@ module.exports = {
   _id: '62534fde2816ed76999e521d',
   wikiTitle: 'Apple',
   wikiDescription:
-    " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic",
+    'When an unknown printer took a galley it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic',
   type: 'Ingredient',
-  image: 'https://blending.s3.us-east-1.amazonaws.com/1771281.png',
+  image: 'https://blending.s3.us-east-1.amazonaws.com/9409581.jpeg',
   status: null,
   portions: [
     {

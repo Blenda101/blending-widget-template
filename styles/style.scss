@@ -1,3 +1,76 @@
 @import 'icons';
 
 // WRITE YOUR SCSS / CSS CODE HERE
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #f8f8f8;
+}
+.wiki {
+  width: 400px;
+  background-color: white;
+  padding: 5px 10px;
+
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      font-weight: 600;
+      font-size: 16px;
+    }
+  }
+
+  &__body {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    img {
+      height: 120px;
+      width: 120px;
+      margin-right: 10px;
+    }
+  }
+  &__content {
+    height: 120px;
+    overflow: hidden;
+  }
+  &__chip {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    color: #c4c4c4;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  &__text {
+    font-size: 14px;
+    color: #c4c4c4;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ebebeb;
+    padding: 5px 10px;
+    b {
+      color: #fe5d1f;
+      font-weight: 600;
+    }
+  }
+
+  &__action {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+    i {
+      color: #c4c4c4;
+    }
+  }
+}

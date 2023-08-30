@@ -1,6 +1,6 @@
 {
-  "title": "RECIPE NAME",
-  "description": "RECIPE_DESCRIPTION",
-  "domain": "Nutrient",
+  "title": "Wiki",
+  "description": "Wiki component for Homepage",
+  "domain": "Wiki",
   "preview": ["Web", "Mobile"]
 }

@@ -1,5 +1,28 @@
 <body>
-  <!-- Start writing your code from here -->
-  <!-- To add fontawesome icon -->
-  <i class="bookmark-icon"></i>
+  <div class="wiki">
+    <div class="wiki__heading">
+      <h2><%= data.wikiTitle %></h2>
+      <button class="wiki__menu">
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+      </button>
+    </div>
+    <div class="wiki__body">
+      <img
+        src="<%= data.image || 'image/ingredient-img.jpg' %>"
+        alt=""
+        class="wiki__image"
+      />
+      <div class="wiki__content">
+        <span class="wiki__chip"><%= data.type %></span>
+        <p class="wiki__text"><%= data.wikiDescription %></p>
+      </div>
+    </div>
+    <div class="wiki__info">
+      <span>Research <b>120</b></span>
+      <span>RX Score <b>809</b></span>
+    </div>
+    <div class="wiki__action">
+      <button><i class="comment-icon"></i></button>
+    </div>
+  </div>
 </body>
