@@ -43,3 +43,10 @@
     content: '\f27a';
   }
 }
+
+.calendar-icon {
+  @extend %f-icon;
+  &:before {
+    content: '\f133';
+  }
+}
