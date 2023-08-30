@@ -11,7 +11,7 @@ const config = require('../config.json');
 const DOMAIN = [
   'Plan',
   'Recipe',
-  'GeneraBlog',
+  'GeneralBlog',
   'Ingredient',
   'Nutrient',
   'Wiki',
