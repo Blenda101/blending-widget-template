@@ -1,31 +1,84 @@
 <body>
-  <div class="plan">
-    <div class="plan__heading">
-      <h2><%= data.planName || "Plan title" %></h2>
-      <button class="plan__menu">
-        <i class="menu-icon"></i>
-      </button>
+  <div class="recipe-main-box">
+    <div class="recipe-top-wrp">
+      <h3 class="recipe-title">
+        <%= data.name ? data.name : 'Banana Mango Smoothie' %>
+      </h3>
     </div>
-    <div class="plan__image">
-      <img
-        src="<%= data.image && data.image.url ? data.image.url : 'plan.png' %>"
-        alt=""
-      />
-    </div>
-    <div class="plan__info">
-      <span>Net Carbs<b><%= data.gigl ? data.gigl.netCarbs : 0 %></b></span>
-      <span>RX Score<b><%= data.gigl ? data.gigl.rxScore : 0 %></b></span>
-      <span>Calorie<b><%= data.calorie ? data.calorie.value : 0 %></b></span>
-    </div>
-    <div class="plan__footer">
-      <div class="plan__rating">
-        <i class="fa-solid fa-star"></i>
-        <%= data.averageRating || 0 %> (<%= data.totalRating || 0 %>)
+    <div class="recipe-media-object">
+      <div class="media">
+        <div class="recipe-midia-img">
+          <figure class="recipe-img-wrp">
+            <img src="images/smoothie-img.png" alt="" />
+          </figure>
+        </div>
+        <div class="media-body">
+          <div class="item-tag-rating d-flex">
+            <div class="tag-item-bx">
+              <a class="recipe-tag">Smoothie</a>
+            </div>
+            <div class="rating-right">
+              <span class="ratings-bx">
+                <img src="images/rating.svg" alt="" /> 4.9 (71)
+              </span>
+            </div>
+          </div>
+          <div class="recipe-dis-text">
+            <p>
+              Cocoa powder, almond milk, avocado, mango, banana, honey, vanilla
+              extract
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="plan__action">
-        <button><i class="calendar-icon"></i></button>
-        <button><i class="bookmark-icon"></i></button>
-        <button><i class="comment-icon"></i></button>
+      <div class="recipe-listing-vertical">
+        <ul>
+          <li><span>Net Carbs </span> <strong>20</strong></li>
+          <li><span>Rx Score </span><strong>701</strong></li>
+          <li><span>Calories</span><strong> 270</strong></li>
+        </ul>
+      </div>
+      <div
+        class="recipe-btm-row d-flex justify-content-between align-items-center"
+      >
+        <div class="recipe-logo">
+          <figure><img src="images/delish.png" alt="" /></figure>
+        </div>
+        <div class="recipe-right-options">
+          <ul class="recipe-options-btm">
+            <li>
+              <button id="onCompare" class="recipe-compare-btn selected">
+                <!-- <button class="recipe-compare-btn selected"> -->
+                <img class="not-selected" src="images/compare.svg" alt="" />
+                <img class="selected" src="images/compare-1.svg" alt="" />
+              </button>
+            </li>
+            <li>
+              <a
+                id="onBookmark"
+                class="bookmark-btn selected"
+                href="javascript:void(0)"
+                id="toggleCollection"
+              >
+                <img
+                  class="not-selected bookmark"
+                  src="images/BookmarksStar.svg"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li>
+              <button
+                id="onComment"
+                class="comment-btn comments d-flex align-items-center"
+              >
+                <!-- <img class="selected" src="images/comment.svg" alt="" /> -->
+                <img class="not-selected" src="images/no-comment.svg" alt="" />
+                <span class="count-comment"> 21 </span>
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>

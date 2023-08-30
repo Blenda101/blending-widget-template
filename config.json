@@ -1,6 +1,6 @@
 {
-  "title": "Home - Plan",
-  "description": "Plan card for home page",
-  "domain": "Plan",
+  "title": "Recipe",
+  "description": "Recipe theme for Homepage",
+  "domain": "Recipe",
   "preview": ["Web", "Mobile"]
 }
