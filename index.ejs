@@ -1,5 +1,32 @@
 <body>
-  <!-- Start writing your code from here -->
-  <!-- To add fontawesome icon -->
-  <i class="bookmark-icon"></i>
+  <div class="plan">
+    <div class="plan__heading">
+      <h2><%= data.planName || "Plan title" %></h2>
+      <button class="wiki__menu">
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+      </button>
+    </div>
+    <div class="plan__image">
+      <img
+        src="<%= data.image && data.image.url ? data.image.url : 'plan.png' %>"
+        alt=""
+      />
+    </div>
+    <div class="plan__info">
+      <span>Net Carbs<b><%= data.gigl ? data.gigl.netCarbs : 0 %></b></span>
+      <span>RX Score<b><%= data.gigl ? data.gigl.rxScore : 0 %></b></span>
+      <span>Calorie<b><%= data.calorie ? data.calorie.value : 0 %></b></span>
+    </div>
+    <div class="plan__footer">
+      <div class="plan__rating">
+        <i class="fa-solid fa-star"></i>
+        <%= data.averageRating || 0 %> (<%= data.totalRating || 0 %>)
+      </div>
+      <div class="plan__action">
+        <button><i class="fa-regular fa-calendar"></i></button>
+        <button><i class="bookmark-icon"></i></button>
+        <button><i class="comment-icon"></i></button>
+      </div>
+    </div>
+  </div>
 </body>

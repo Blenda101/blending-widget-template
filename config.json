@@ -1,6 +1,6 @@
 {
-  "title": "RECIPE NAME",
-  "description": "RECIPE_DESCRIPTION",
-  "domain": "Nutrient",
+  "title": "Home - Plan",
+  "description": "Plan card for home page",
+  "domain": "Plan",
   "preview": ["Web", "Mobile"]
 }

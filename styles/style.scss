@@ -1,3 +1,75 @@
 @import 'icons';
 
 // WRITE YOUR SCSS / CSS CODE HERE
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #f8f8f8;
+}
+.plan {
+  width: 400px;
+  background-color: white;
+  padding: 10px 15px;
+  overflow: hidden;
+
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      font-weight: 600;
+      font-size: 18px;
+    }
+  }
+
+  &__image {
+    overflow: hidden;
+    margin: 10px 0;
+    img {
+      width: 141%;
+      object-fit: cover;
+      object-position: left;
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ebebeb;
+    padding: 5px 10px;
+    font-size: 14px;
+    b {
+      color: #fe5d1f;
+      font-weight: 600;
+      margin-left: 5px;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  &__rating {
+    font-size: 14px;
+    i {
+      color: #fe5d1f;
+    }
+  }
+  &__action {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+    i {
+      color: #c4c4c4;
+      font-size: 18px;
+    }
+    button {
+      margin-left: 18px;
+    }
+  }
+}
